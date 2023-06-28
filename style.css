@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    background-color: #202020;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #0070bb, #7bebff);
+    color: #ffffff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    border: none;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    border: 0;
+    padding: 8px 10px;
+    height: 40px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.search input::placeholder{
+    color: #ffffff;
+    font-weight: 200;
+}
+
+.search button{
+    border: none;
+    background: none;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button i{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    border-radius: 100%;
+    color: #ffffff;
+}
+
+.weather-icon{
+    width: 170px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+    color: #000000;
+}
+
+p{
+    margin: 0;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+}
+
+.weather{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media(min-width: 320px){
+    div.card{
+        padding: 10px;
+        margin: 40px auto;
+    }
+    img.weather-icon{
+        margin-top: 20px;
+        padding: 10px;
+    }
+    h1.temp{
+        font-size: 60px;
+        font-weight: 600;
+    }
+    h2.city{
+        font-size: 35px;
+        font-weight: 500;
+    }
+div.details{
+    
+    padding: 10px 5px;
+}
+div.details p{
+    font-size: 16px;
+    }
+    div.col img{
+        width: 35px
+    }
+}
